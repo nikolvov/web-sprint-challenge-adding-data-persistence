@@ -1,8 +1,8 @@
 // build your `/api/resources` router here
 const router = require('express').Router()
 
-router.use('*', (req, res) => {
-    res.json({ api: "up" })
+router.get('/', (req, res) => {
+    res.json([])
 })
 
 router.use((err, req, res, next) => { // eslint-disable-line

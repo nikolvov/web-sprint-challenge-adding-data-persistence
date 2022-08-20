@@ -7,7 +7,7 @@ router.use('*', (req, res) => {
 
 router.use((err, req, res, next) => { // eslint-disable-line
     res.status(500).json({
-        customMessage: 'something went wrong inside the recipes router',
+        customMessage: 'something went wrong inside the tasks router',
         message: err.message,
         stack: err.stack
     })
